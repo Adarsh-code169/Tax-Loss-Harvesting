@@ -60,11 +60,15 @@ During development, the following assumptions were made:
 
 ## 📸 Screenshots
 
-| Desktop Dark Mode | Mobile Table View |
+### Desktop Views
+| Light Mode | Dark Mode |
 | :--- | :--- |
-| ![Desktop Dashboard](https://raw.githubusercontent.com/Adarsh-code169/Tax-Loss-Harvesting/main/public/demo-desktop.png) | ![Mobile View](https://raw.githubusercontent.com/Adarsh-code169/Tax-Loss-Harvesting/main/public/demo-mobile.png) |
+| ![Desktop Light Mode](./public/desktop-light.png) | ![Desktop Dark Mode](./public/desktop-dark.png) |
 
-> *Note: For the repository version, please check the `/public/` folder for high-resolution screenshots of all UI states.*
+### Mobile View
+| Mobile Dashboard |
+| :--- |
+| ![Mobile Screenshot](./public/mobile.png) |
 
 ---
 
