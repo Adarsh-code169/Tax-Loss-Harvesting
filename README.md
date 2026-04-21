@@ -63,12 +63,12 @@ During development, the following assumptions were made:
 ### Desktop Views
 | Light Mode | Dark Mode |
 | :--- | :--- |
-| ![Desktop Light Mode](./public/desktop-light.png) | ![Desktop Dark Mode](./public/desktop-dark.png) |
+| ![Desktop Light Mode](./public/desktop-light1.png) | ![Desktop Dark Mode](./public/desktop-dark1.png) |
 
 ### Mobile View
 | Mobile Dashboard |
 | :--- |
-| ![Mobile Screenshot](./public/mobile.png) |
+| ![Mobile Screenshot](./public/mobile1.png) |
 
 ---
 
