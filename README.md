@@ -1,16 +1,81 @@
-# React + Vite
+# KoinX Tax Optimisation Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, mobile-responsive cryptocurrency tax-loss harvesting dashboard built for KoinX. This application allows users to identify "Short-term Capital Loss" opportunities in their portfolio to offset gains and save on taxes.
 
-Currently, two official plugins are available:
+### 🚀 [Live Demo](https://tax-loss-harvesting-dusky.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Tax-Loss Harvesting Engine**: Real-time calculation of tax savings based on selected assets.
+- **Interactive Holdings Table**: Sortable, selectable, and searchable asset list with detailed loss/gain breakdown.
+- **Mobile-First Design**: Fully responsive layout with custom horizontal scrolling for data-heavy tables.
+- **Dual Theme Support**: Premium Light and Dark modes with system preference detection.
+- **Rich Visuals**: Integrated high-quality cryptocurrency logos and modern iconography (Lucide React).
+- **Smooth Animations**: Glassmorphism effects and micro-interactions powered by Tailwind CSS v4.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Setup Instructions
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Adarsh-code169/Tax-Loss-Harvesting.git
+   cd Tax-Loss-Harvesting
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 🧠 Assumptions & Technical Details
+
+During development, the following assumptions were made:
+
+- **Tax Calculation Basis**: 
+  - **Short-term Capital Gains (STCG)** are calculated for assets held < 1 year.
+  - **Long-term Capital Gains (LTCG)** are calculated for assets held > 1 year.
+  - Indian tax regulations (as of 2024) were used as a baseline for the logic, though the dashboard is flexible for global use.
+- **Cost Basis**: Assumes a **FIFO (First-In, First-Out)** method for calculating gains and losses across multiple buy orders of the same asset.
+- **Market Data**: Prices are currently managed via a mock API layer (`src/api`), simulating a real-world response from a provider like CoinGecko.
+- **Wash Sale Rules**: The dashboard identifies purely technical loss positions and assumes the user is aware of their local "Wash Sale" or "Bed & Breakfast" rules regarding immediate buy-backs.
+
+---
+
+## 📸 Screenshots
+
+| Desktop Dark Mode | Mobile Table View |
+| :--- | :--- |
+| ![Desktop Dashboard](https://raw.githubusercontent.com/Adarsh-code169/Tax-Loss-Harvesting/main/public/demo-desktop.png) | ![Mobile View](https://raw.githubusercontent.com/Adarsh-code169/Tax-Loss-Harvesting/main/public/demo-mobile.png) |
+
+> *Note: For the repository version, please check the `/public/` folder for high-resolution screenshots of all UI states.*
+
+---
+
+## 🔧 Built With
+
+- **React 18**
+- **Vite** (Optimized build tool)
+- **Tailwind CSS v4** (Modern styling system)
+- **Lucide React** (Icons)
+- **Vercel** (Deployment)
+
+---
+
+Developed with ❤️ for KoinX.
